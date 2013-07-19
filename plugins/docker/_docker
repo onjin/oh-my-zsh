@@ -110,6 +110,10 @@ case "$words[1]" in
     _docker_images
     _wanted installed_images expl 'images' compadd -a installed_images;;
 
+  push)
+    _docker_images
+    _wanted installed_images expl 'images' compadd -a installed_images;;
+
   start)
     _arguments \
      '1: :->processes' &&  return 0
